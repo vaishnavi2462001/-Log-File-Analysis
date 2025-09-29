@@ -1,0 +1,19 @@
+# Find system startup messages
+sudo grep "systemd" /var/log/syslog | grep "startup" | head -5 >
+~/startup_messages.txt 
+shows empty text files
+so first checked # Find system startup messages
+sudo grep "systemd" /var/log/syslog | less and checked any string matching with "startup"
+shows no startup string. so there may be chance that systemd logs its startup events using a different keyword 
+(e.g., "Starting", "boot", "initialization", etc.), so
+sudo grep "systemd" /var/log/syslog | grep -i "startup" entered
+This uses the -i flag to match "startup", "Startup", "STARTUP", etc.
+or try diff one 
+sudo grep "systemd" /var/log/syslog | grep "boot"
+# OR
+sudo grep "systemd" /var/log/syslog | grep "Starting"
+
+
+Starting	A general-purpose message used by systemd to indicate when a service, target, or unit begins its execution. This is the most common log entry and usually gives you the most detail about the process of initialization.
+startup	A more colloquial term that may be used by a specific service or application (not necessarily systemd itself) to describe its initial phase. It's less standardized than "Starting."
+boot	Typically refers to the very initial stages of the operating system load, often including kernel messages or very early systemd processes like the target units being activated. It signifies the start of the whole OS session.
