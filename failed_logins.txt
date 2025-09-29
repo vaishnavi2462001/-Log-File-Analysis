@@ -1,4 +1,3 @@
-Sep 29 18:39:30 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
 Sep 29 18:39:35 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
 Sep 29 20:57:52 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
 Sep 29 20:57:54 user-virtual-machine sudo:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
@@ -7,3 +6,5 @@ Sep 29 23:04:05 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user
 Sep 29 23:13:12 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
 Sep 29 23:14:48 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep -c 'Failed password' /var/log/auth.log
 Sep 29 23:16:50 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+Sep 30 00:06:10 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep -c 'Failed password' /var/log/auth.log
+Sep 30 00:06:32 user-virtual-machine sudo:     user : TTY=pts/5 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
